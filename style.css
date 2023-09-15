@@ -1,15 +1,21 @@
 :root
 {
+	/* Color palette variables */
 	--color-bright-red: #ff0546;
 	--color-red: #9c173b;
 	--color-blood-red: #660f31;
 	--color-dark-red: #450327;
+	--color-red-black: #270022;
+	--color-dark-violet: #17001d;
+	--color-black: #09010d;
+	--color-cyan: #0ce6f2;
+	--color-baby-blue: #0098db;
+	--color-blue: #1e579c;
 }
 
 body
 {
-	background-color: var(--color-dark-red);
-	color: var(--color-bright-red);
+	background-image: url("3_skeletons_dancing.gif");
 }
 
 h1
@@ -17,8 +23,58 @@ h1
 	font-size: 2em;
 }
 
-div#footer
+.container
 {
+	text-align: center;
+}
+
+.header
+{
+	background-color: var(--color-dark-red);
+	color: var(--color-bright-red);
+
+	text-align: left;
+	font-size: xx-large;
+	font-weight: bold;
+
+	/* Extend the box of the footer to the whole width of the page */
+	width: 97%;
+	padding-left: 3%;
+	margin-top: 0;
+
+	/* Align to top */
+	position: absolute;
+	left: 0;
+	line-height: 0em;
+}
+
+.text
+{
+	background-color: var(--color-dark-red);
+	color: var(--color-bright-red);
+
+	/* Automatically center the content box */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* leave some margin for the text on the left and right */
+	width: 60%;
+	padding-inline: 5%;
+}
+
+.container .video
+{
+	width: auto;
+	height: auto;
+	max-width: 200px;
+	max-height: 200px;
+	margin: auto;
+}
+
+.footer
+{
+	text-align: left;
 	background-color: var(--color-blood-red);
 	color: var(--color-bright-red);
 
